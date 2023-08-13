@@ -63,6 +63,9 @@
 /* includeing google fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+body{
+    background: #000;
+}
 
 *{
     margin: 0;
@@ -111,11 +114,11 @@ ul{
     width: 100%;
     padding: 18px 10px;
     border-bottom: 2px solid #E31E21;
-
     background: var(--header-background);
     color: var(--header-heading-color);
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     box-shadow: 0 5px 20px black;
+    position: relative;
 }
 
 .header-wrapper{
@@ -273,4 +276,59 @@ ul{
 
 .sel-item span{
     margin-left: 10px;
+}
+
+.search{
+    content: "";
+    position: absolute;
+    top: 73px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 28px 50px;
+    z-index: -999;
+    display: none;
+}
+
+.search-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-form{
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.search-inner .search-form span i{
+    font-size: 22px;
+    color: #000000;
+}
+.search-inner .search-form input{
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+.search-inner .search-form input::placeholder{
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.search-inner > button {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.search-inner > button i{
+    font-size: 22px;
+}
+
+.showSearch{
+    display: block;
 }

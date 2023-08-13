@@ -3,8 +3,13 @@ const button = document.querySelector(".nav-toggle");
 const headerNav = document.querySelector(".header-nav");
 const disclosureBtn = document.querySelector(".sel-disclosure");
 const itemsContainer = document.querySelector(".sel-itemsContainer");
+const searchBtn = document.getElementById("searchbtn");
+const search = document.getElementById("search");
+const classSearch = document.querySelector(".search");
+const searchClose = document.querySelector("button.search-close");
 
 
+// navbar toggle
 button.addEventListener("click", () => {
 
     // if(headerNav.classList.contains("show-nav")){
@@ -18,9 +23,23 @@ button.addEventListener("click", () => {
 
 
 
-// selbtn get value 
-
+// selbtn button toggle 
 disclosureBtn.addEventListener("click", function(){
 
     itemsContainer.classList.toggle("showSet");
+});
+
+
+// search toggle here now
+
+searchBtn.addEventListener("click", () => {
+    search.classList.toggle("showSearch");
+});
+
+
+// search bar close here 
+searchClose.addEventListener("click", () => {
+   if(classSearch.classList.contains("showSearch")){
+        classSearch.classList.remove("showSearch");
+   }
 });

@@ -51,6 +51,10 @@
         transition: 3s;
     }
 
+    .header-nav li.active a:after{
+        display: none;
+    }
+
    
 }
 
