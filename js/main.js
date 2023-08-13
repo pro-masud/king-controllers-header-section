@@ -1,6 +1,9 @@
 // get all values here
 const button = document.querySelector(".nav-toggle");
 const headerNav = document.querySelector(".header-nav");
+const disclosureBtn = document.querySelector(".sel-disclosure");
+const itemsContainer = document.querySelector(".sel-itemsContainer");
+
 
 button.addEventListener("click", () => {
 
@@ -11,4 +14,13 @@ button.addEventListener("click", () => {
     // }
 
     headerNav.classList.toggle("show-nav");
+});
+
+
+
+// selbtn get value 
+
+disclosureBtn.addEventListener("click", function(){
+
+    itemsContainer.classList.toggle("showSet");
 });
