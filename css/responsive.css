@@ -1,9 +1,32 @@
 @media (max-width: 1200px) {
     .header-nav{
+        position: absolute;
+        top: 120px;
+        left: 0;
+        display: block;
+        z-index: 999999;
+        background: #333;
+        width: 100%;
+    }
+    .header-nav li{
+        display: block;
+        padding: 15px 0;
+        border-bottom: 1px solid #fff;
+    }
+
+    .list-cart li:first-child{
         display: none;
+    }
+
+    .header-nav li:last-child{
+        border: none;
     }
     .nav-toggle{
         display: inline-block;
+    }
+
+    .header-nav li:hover a::after{
+        display: none;
     }
 
     .logo{
@@ -16,6 +39,19 @@
     .list-cart{
         width:44%;
     }
+
+    .topbtn {
+        background: linear-gradient(95deg, rgb(255, 167, 129), rgb(196, 50, 86)) !important;
+        padding: 2px;
+    }
+
+    .show-nav{
+        height: 0;
+        overflow: hidden;
+        transition: 3s;
+    }
+
+   
 }
 
 
@@ -24,7 +60,10 @@
 }
 
 @media (max-width: 768px) {
-
+    
+    .header-nav{
+        top: 120px;
+    }
 }
 
 @media (max-width: 578px) {
@@ -34,8 +73,15 @@
     .list-cart{
         width:40%;
     }
-    .list-cart li:first-child{
+   
+
+    .list-cart li:nth-child(2){
         display: none;
+    }
+
+    .header-nav{
+        top: 137px;
+        margin-top:0px;
     }
 }
 
