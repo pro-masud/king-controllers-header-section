@@ -1,0 +1,114 @@
+/* basic style setup */
+
+/* includeing google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 86%;
+    margin: 0 auto;
+}
+
+/* header top styling start */
+.header-top{
+    background-color: #E31E21;
+}
+
+.header-top-content{
+    text-align: center;
+}
+
+.header-top-content a{
+    display: inline-block;
+    color: #fff;
+    padding: 12px 15px;
+    text-transform: uppercase ;
+    font-size: 13px;
+    letter-spacing: normal;
+    font-weight: normal;
+    line-height: 18px;
+}
+
+
+/* main header part styling start */
+
+.main-header{
+    background-color: #1D1D1B;
+    width: 100%;
+    padding: 18px 10px;
+}
+
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    order: -1;
+}
+
+.nav-toggle{
+    display: none;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-toggle i{
+    font-size: 22px;
+}
+
+.logo img{
+    max-width: 140px;
+}
+
+.header-nav{
+    display: flex;
+}
+
+.header-nav li{
+    display: inline-block;
+    margin: 0 18px;
+}
+
+.header-nav li a{
+    font-size: 15px;
+    color:#fff;
+    letter-spacing: normal;
+    text-transform: uppercase;
+}
+
+.list-cart{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 0 15px;
+}
+
+.list-cart li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.list-cart li a{
+    display: inline-block;
+    color: #fff;
+    font-size: 22px;
+}
