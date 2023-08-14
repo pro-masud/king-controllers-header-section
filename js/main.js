@@ -7,6 +7,8 @@ const searchBtn = document.getElementById("searchbtn");
 const search = document.getElementById("search");
 const classSearch = document.querySelector(".search");
 const searchClose = document.querySelector("button.search-close");
+const msg = document.querySelector(".msg");
+const body = document.querySelector("body");
 
 
 // navbar toggle
@@ -43,3 +45,11 @@ searchClose.addEventListener("click", () => {
         classSearch.classList.remove("showSearch");
    }
 });
+
+window.onscroll = (e) => {
+    const value = e.target.value;
+    
+    msg.innerHTML = `${value}`;
+}
+
+console.log(body.onscroll);

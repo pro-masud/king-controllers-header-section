@@ -1,12 +1,21 @@
+@media (min-width: 1200px){
+    .showSearch{
+        transform: translateY(72px);
+    }
+}
 @media (max-width: 1200px) {
     .header-nav{
         position: absolute;
-        top: 120px;
+        top: 0;
         left: 0;
         display: block;
-        z-index: 999999;
         background: #333;
         width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(60px);
+        transition: .7s;
     }
     .header-nav li{
         display: block;
@@ -46,9 +55,10 @@
     }
 
     .show-nav{
-        height: 0;
-        overflow: hidden;
-        transition: 3s;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(81px);
     }
 
     .header-nav li.active a:after{
@@ -66,7 +76,7 @@
 @media (max-width: 768px) {
     
     .header-nav{
-        top: 120px;
+        top: 0px;
     }
 }
 
@@ -84,7 +94,7 @@
     }
 
     .header-nav{
-        top: 137px;
+        top: 0px;
         margin-top:0px;
     }
 }
